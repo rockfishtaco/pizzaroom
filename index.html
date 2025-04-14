@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Heaven - Artisanal Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Slice Heaven</h1>
+                <p>Artisanal Pizza Crafted with Love</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="cart-btn" class="btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Handcrafted Pizzas Made Fresh Daily</h2>
+            <p>Order online for delivery or pickup</p>
+            <a href="#menu" class="btn primary">Order Now</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Pizzas</h2>
+            <div class="pizza-grid">
+                <!-- Pizza items will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, Slice Heaven started as a small family-owned pizzeria with a passion for authentic Italian flavors. We use only the freshest ingredients, locally sourced when possible, and our dough is made fresh daily.</p>
+                <p>Every pizza is handcrafted with care and baked to perfection in our stone-fired oven.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pizza chef">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p>123 Pizza Street<br>Foodville, NY 10001</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-clock"></i> Hours</h3>
+                    <p>Mon-Thu: 11am - 10pm<br>Fri-Sat: 11am - 11pm<br>Sun: 12pm - 9pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Order</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn" class="btn primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Slice Heaven. All rights reserved.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
